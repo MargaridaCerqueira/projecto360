@@ -1,0 +1,18 @@
+.banner {
+  padding-top: 10px;
+}
+
+.swiper-slide {
+  width: 70%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.swiper-pagination-bullets {
+  display: none;
+}

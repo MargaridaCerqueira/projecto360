@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Mercadão - Compre Pingo Doce</title>
+
+    <!-- import bootstrap library -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <!-- import Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- import Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!--- import font jost -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--- import icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://kit.fontawesome.com/19cd43eee4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- import webpage's stylesheet -->
+    <link rel="stylesheet" href="styles/css/style.css" />
+
+    <!-- import JS -->
+    <script src="script.js" defer></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- import favicon -->
+    <!-- prettier-ignore -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png"/>
+    <!-- prettier-ignore -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png"/>
+    <!-- prettier-ignore -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png"/>
+    <!-- prettier-ignore -->
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <!-- prettier-ignore -->
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <!-- prettier-ignore -->
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <!-- prettier-ignore -->
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="navbar">
+          <!--Header :: left -->
+          <div class="navbar__group">
+            <a class="navbar__brandlogo" href="https://mercadao.pt/"
+              ><img
+                src="assets/mercadao.png"
+                alt="Logo Mercadão"
+                class="navbar__logo"
+              />
+            </a>
+            <div>
+              <button class="navbar_button header__btn">
+                Mudar de loja
+                <span class="material-symbols-rounded header__btn-icon">
+                  keyboard_arrow_down
+                </span>
+              </button>
+            </div>
+          </div>
+          <!--Header :: center -->
+          <div class="navbar__group">
+            <a class="navbar__brandlogo" href="index.html"
+              ><img
+                src="assets/pingo_doce.jpg"
+                alt="Logo Pingo Doce"
+                class="navbar__logo"
+              />
+            </a>
+          </div>
+          <!--Header :: right -->
+          <div class="navbar__group">
+            <div class="header__input-container">
+              <input
+                class="header__input-field"
+                type="search"
+                placeholder="Procurar"
+              />
+              <a href="#">
+                <span class="material-symbols-rounded input__icon">
+                  search
+                </span>
+              </a>
+            </div>
+            <div class="header__icon-group">
+              <div class="login">
+                <a href="#">
+                  <span class="material-symbols-rounded header__icon">
+                    person
+                  </span>
+                </a>
+              </div>
+              <div class="cart">
+                <a href="#">
+                  <span class="material-symbols-rounded header__icon">
+                    shopping_basket
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner">
+      <!-- banner -->
+      <div class="margin-bottom-80">
+        <div class="swiper mySwiper_banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!--slide 1-->
+              <a
+                href="https://mercadao.pt/store/pingo-doce/promotion/campanha-escolhas-equilibradas-pingo-doce"
+              >
+                <img
+                  src="assets/banner1_saudavel.jpeg"
+                  alt="banner-seleção equilibrada"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <!--slide 2-->
+              <a href="https://mercadao.pt/store/pingo-doce/lactogal-b1-d1-w44">
+                <img
+                  src="assets/banner2_mimosa.jpeg"
+                  alt="banner-produtos Mimosa"
+                />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <!--frame 3-->
+              <a
+                href="https://mercadao.pt/store/pingo-doce/category/as-nossas-marcas-10"
+              >
+                <img
+                  src="assets/banner3_poupanca.png"
+                  s
+                  alt="banner-Go activa"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="grid__container">
+        <!-- sidebar categories menu -->
+        <div class="aside margin-bottom-80">
+          <div class="sidebar-menu">
+            <h4 class="sidebar-menu__title">Categorias</h4>
+            <ul class="sidebar-menu__categories">
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Campanhas</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">As Nossas Marcas</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Mercearia</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Fruta e Legumes</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Peixaria</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Talho</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Charcutaria</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Padaria e Pastelaria</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Take Away</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Leites, Ovos & Natas</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Frigorifico</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Congelados</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Alternativas Alimentares</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Bebidas</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Infantil</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Higiene e Beleza</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Casa</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Bazar</a>
+              </li>
+              <li class="siderbar-menu__link">
+                <a class="" href="#">Animais</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- product section-->
+        <div class="top-block">
+          <h2 class="title-primary margin-bottom-40">Campanhas</h2>
+          <ul class="product-grid">
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img
+                      id="image"
+                      src="assets/kefir_morango_nestle.png"
+                      alt="product image"
+                    />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Nestlé</span>
+                    <h4 class="product-name" id="cardTitle">Kefir Morango</h4>
+                    <div class="product__price">
+                      <p class="unit-price">6X100 G | 4,15 €/G</p>
+                      <span class="curr-price" id="currPrice">2,49 €</span>
+                      <span class="old-price" id="oldPrice">3,09 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img
+                      src="assets/kefir_natural_nestle.png"
+                      alt="product image"
+                    />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Nestlé</span>
+                    <h4 class="product-name">Kefir Natural</h4>
+                    <div class="product__price">
+                      <p class="unit-price">150 GR | 6,60 €/KG</p>
+                      <span class="curr-price">0,99 €</span>
+                      <span class="old-price">1,24 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img src="assets/Danacol_aveia.png" alt="product image" />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Danacol</span>
+                    <h4 class="product-name">Iogurte Líquido Bifidus Aveia</h4>
+                    <div class="product__price">
+                      <p class="unit-price">6X100 G | 4,98 €/KG</p>
+                      <span class="curr-price">2,99 €</span>
+                      <span class="old-price">3,99 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img
+                      src="assets/Danacol_tropical.png"
+                      alt="product image"
+                    />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Danacol</span>
+                    <h4 class="product-name">
+                      Iogurte Líquido de Frutos Exóticos Bifidus
+                    </h4>
+                    <div class="product__price">
+                      <p class="unit-price">6X100 G | 4,98 €/KG</p>
+                      <span class="curr-price">2,99 €</span>
+                      <span class="old-price">3,99 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img src="assets/YoPro_Blueberry.png" alt="product image" />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">YoPRO</span>
+                    <h4 class="product-name">Pudim Proteico de Mirtilo</h4>
+                    <div class="product__price">
+                      <p class="unit-price">160 G | 6,81 €/KG</p>
+                      <span class="curr-price">1,09 €</span>
+                      <span class="old-price">1,89 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img src="assets/YoPro_choco.png" alt="product image" />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">YoPRO</span>
+                    <h4 class="product-name">
+                      Mousse Proteica de Chocolate e Caramelo
+                    </h4>
+                    <div class="product__price">
+                      <p class="unit-price">200 G | 10,95 €/KG</p>
+                      <span class="curr-price">2,19 €</span>
+                      <span class="old-price">2,74 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img
+                      src="assets/gerble_choco_amendoa.png"
+                      alt="product image"
+                    />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Gerblé</span>
+                    <h4 class="product-name">
+                      Bolachas de Chocolate e Amêndoa
+                    </h4>
+                    <div class="product__price">
+                      <p class="unit-price">200 G | 9,90 €/KG</p>
+                      <span class="curr-price">1,98 €</span>
+                      <span class="old-price">2,64 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img
+                      src="assets/gerble_soja_figo.png"
+                      alt="product image"
+                    />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Gerblé</span>
+                    <h4 class="product-name">Bolachas de Soja e Figo</h4>
+                    <div class="product__price">
+                      <p class="unit-price">270 G | 7,33 €/KG</p>
+                      <span class="curr-price">1,98 €</span>
+                      <span class="old-price">2,64 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img
+                      src="assets/smoothie_frutosverm.png"
+                      alt="product image"
+                    />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Pingo Doce</span>
+                    <h4 class="product-name">Smoothie Frutos Vermelhos</h4>
+                    <div class="product__price">
+                      <p class="unit-price">330 ML | 3,00 €/LT</p>
+                      <span class="curr-price">0,99 €</span>
+                      <span class="old-price">1,29 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img
+                      src="assets/smoothie_frutostrop.png"
+                      alt="product image"
+                    />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Pingo Doce</span>
+                    <h4 class="product-name">Smoothie Frutos Tropicais</h4>
+                    <div class="product__price">
+                      <p class="unit-price">330 ML | 3,00 €/LT</p>
+                      <span class="curr-price">0,99 €</span>
+                      <span class="old-price">1,29 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-block margin-bottom-80">
+          <h2 class="title-primary margin-40">Produtos Sugeridos</h2>
+          <ul class="product-grid">
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img
+                      id="image"
+                      src="assets/cha_branco.png"
+                      alt="product image"
+                    />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Bio Cupper</span>
+                    <h4 class="product-name" id="cardTitle">Chá Branco</h4>
+                    <div class="product__price">
+                      <p class="unit-price">20 UN | 0,20 €/UNIDADE</p>
+                      <span class="curr-price" id="currPrice">3,99 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img
+                      id="image"
+                      src="assets/cha_gengibre.png"
+                      alt="product image"
+                    />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Bio Cupper</span>
+                    <h4 class="product-name" id="cardTitle">
+                      Chá de Limão e Gengibre
+                    </h4>
+                    <div class="product__price">
+                      <p class="unit-price">20 UN | 0,19 €/UNIDADE</p>
+                      <span class="curr-price" id="currPrice">3,74 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img src="assets/cha_earlgrey.png" alt="product image" />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Bio Cupper</span>
+                    <h4 class="product-name">Chá Early Grey</h4>
+                    <div class="product__price">
+                      <p class="unit-price">20 UN | 0,20 €/UNIDADE</p>
+                      <span class="curr-price" id="currPrice">3,99 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img
+                      src="assets/cha_englishbreakfast.png"
+                      alt="product image"
+                    />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Bio Cupper</span>
+                    <h4 class="product-name">Chá English Breakfast</h4>
+                    <div class="product__price">
+                      <p class="unit-price">20 UN | 0,20 €/UNIDADE</p>
+                      <span class="curr-price" id="currPrice">3,99 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img src="assets/cha-camomila.png" alt="product image" />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Bio Cupper</span>
+                    <h4 class="product-name">Chá Infusão de Camomila</h4>
+                    <div class="product__price">
+                      <p class="unit-price">20 UN | 0,13 €/UNIDADE</p>
+                      <span class="curr-price" id="currPrice">2,69 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img src="assets/cafe_aromatico.png" alt="product image" />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Pingo Doce</span>
+                    <h4 class="product-name">Café Cápsulas Aromático</h4>
+                    <div class="product__price">
+                      <p class="unit-price">16 UN | 0,27 €/UNIDADE</p>
+                      <span class="curr-price">4,29 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img src="assets/cafe_corposo.png" alt="product image" />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Pingo Doce</span>
+                    <h4 class="product-name">Café Cápsulas Corposo</h4>
+                    <div class="product__price">
+                      <p class="unit-price">16 UN | 0,27 €/UNIDADE</p>
+                      <span class="curr-price">4,29 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img src="assets/cafe_chiado8.png" alt="product image" />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Pingo Doce</span>
+                    <h4 class="product-name">Café Cápsulas Chiado</h4>
+                    <div class="product__price">
+                      <p class="unit-price">16 UN | 0,27 €/UNIDADE</p>
+                      <span class="curr-price">4,29 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img src="assets/cafe_extraforte.png" alt="product image" />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Pingo Doce</span>
+                    <h4 class="product-name">Café Cápsulas Extra Forte</h4>
+                    <div class="product__price">
+                      <p class="unit-price">16 UN | 0,27 €/UNIDADE</p>
+                      <span class="curr-price">4,29 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+            <li class="product">
+              <div class="card-primary">
+                <a href="#">
+                  <div class="product__image">
+                    <img src="assets/cafe_invicta.png" alt="product image" />
+                  </div>
+                  <div class="product__details">
+                    <span class="product-brand">Pingo Doce</span>
+                    <h4 class="product-name">Café Cápsulas Invicta</h4>
+                    <div class="product__price">
+                      <p class="unit-price">16 UN | 0,27 €/UNIDADE</p>
+                      <span class="curr-price">4,29 €</span>
+                    </div>
+                  </div>
+                </a>
+                <div class="card__actionButtons">
+                  <button class="card__btn">Adicionar</button>
+                  <a class="fav-btn"><i class="fa-solid fa-heart"></i></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer-->
+        <footer class="footer">
+          <div class="footer_menu">
+            <div class="column">
+              <ul class="footer__navigation">
+                <li>
+                  <h5 class="subtitle">O Mercadão</h5>
+                  <ul class="footer__links">
+                    <li>
+                      <a href="#">Sobre Nós</a>
+                    </li>
+                    <li>
+                      <a href="#">Lojas Parceiras</a>
+                    </li>
+                    <li>
+                      <a href="#">Trabalhar Connosco</a>
+                    </li>
+                    <li>
+                      <a href="#">Fonte Online</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="footer__navigation">
+                <li>
+                  <h5 class="subtitle">Contactos</h5>
+                  <ul class="footer__links">
+                    <li>
+                      <a href="#">ajuda@mercadao.pt</a>
+                    </li>
+                    <li>
+                      <a href="#">WhatsApp</a>
+                    </li>
+                    <li>
+                      <a href="#">Facebook Messenger</a>
+                    </li>
+                  </ul>
+                  <h5 class="subtitle">Horário</h5>
+                  <ul class="footer__links">
+                    <li>
+                      <a href="#">00.09h-20.00h</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="footer__navigation">
+                <li>
+                  <h5 class="subtitle">Compras Seguras</h5>
+                  <ul class="footer__links">
+                    <li>
+                      <a href="#">Perguntas Frequentes</a>
+                    </li>
+                    <li>
+                      <a href="#">Política de Privacidade</a>
+                    </li>
+                    <li>
+                      <a href="#">Cookies</a>
+                    </li>
+                    <li>
+                      <a href="#">Termos e Condições</a>
+                    </li>
+                    <li>
+                      <a href="#">Livro de Reclamações</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <ul class="footer__navigation">
+                <li>
+                  <h5 class="subtitle">Métodos de Pagamento</h5>
+                  <ul class="footer__links">
+                    <li>
+                      <a href="#">Cartão de Débito/Crédito</a>
+                    </li>
+                    <li>
+                      <a href="#">MbWay</a>
+                    </li>
+                    <li>
+                      <a href="#">PayPal</a>
+                    </li>
+                  </ul>
+
+                  <h5 class="footer_subtitle">Siga-nos nas Redes Sociais</h5>
+                  <ul class="footer__links">
+                    <div class="social-links">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/mercadao.pt/"
+                          target="_blank"
+                        >
+                          <i
+                            class="fa-brands fa-facebook-square social-links_link"
+                          >
+                          </i>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="https://www.instagram.com/mercadao.pt/?hl=pt"
+                          target="_blank"
+                        >
+                          <i
+                            class="fa-brands fa-instagram-square social-links_link"
+                          >
+                          </i>
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@import "_variables";
+@import "_reset";
+@import "_header";
+@import "_banner";
+@import "_card";
+@import "_footer";
+
+body {
+  font-family: "Jost", sans-serif;
+  color: $black;
+  background-color: $bg-color;
+}
+
+//Utilities
+.margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
+.margin-60 {
+  margin-bottom: 60px;
+}
+
+.margin-bottom-80 {
+  margin-bottom: 80px;
+}
+
+.title-primary {
+  text-align: center;
+  font-size: $title-size;
+}
+
+.subtitle {
+  font-size: $subtitle-size;
+}
+
+//Grid display
+.grid__container {
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: 250px minmax(10px, 1fr);
+  grid-template-areas:
+    "aside . top-block"
+    "aside . bottom-block"
+    "footer footer footer";
+}
+
+.top-block {
+  grid-area: top-block;
+}
+
+.bottom-block {
+  grid-area: bottom-block;
+}
+
+//Sidebar
+.aside {
+  grid-area: aside;
+}
+
+.sidebar-menu {
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-menu__title {
+  font-weight: $medium;
+  font-size: $text-size;
+}
+
+.siderbar-menu__link {
+  a {
+    color: $black;
+    font-size: $text-size;
+
+    &:hover {
+      text-decoration: underline $brand-color;
+    }
+  }
+}
+
+//Product section
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .product {
+    border: 1px solid black;
+  }
+}

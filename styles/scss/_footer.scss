@@ -1,0 +1,36 @@
+.footer {
+  grid-area: footer;
+  color: $black;
+  padding: 20px 0;
+  .footer_menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footer__navigation {
+  width: 100%;
+  font-size: $text-size;
+  .subtitle {
+    margin-bottom: 25px;
+    color: $brand-color;
+  }
+  .footer__links {
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: $black;
+    }
+  }
+}
+
+.social-links {
+  display: inline-flex;
+  gap: 13px;
+
+  a {
+    font-size: $title-size;
+  }
+}
