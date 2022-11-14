@@ -43,26 +43,8 @@ a {
   max-width: 178px;
 }
 
-.header__btn {
-  position: relative;
-  width: 204px;
-  font-size: 16px;
-  border: 2px solid white;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-out, border-color 0.3s ease-out, color 0.3s ease-out;
-  background-color: initial;
+.navbar-toggler-icon {
   color: white;
-  text-align: left;
-  padding: 6px 12px;
-}
-.header__btn:hover {
-  border-color: white;
-  background-color: white;
-  color: black;
-}
-.header__btn .header__btn-icon {
-  position: absolute;
-  right: 0;
 }
 
 .header__input-container {
@@ -77,15 +59,13 @@ a {
   border-radius: 5px;
   width: 300px;
 }
-
-.header__input-field:focus {
+.header__input-container .header__input-field:focus {
   background-color: white;
   color: black;
   outline: 0;
   box-shadow: 2px 3px 0 2px rgba(33, 36, 39, 0.006);
 }
-
-.input__icon {
+.header__input-container .input__icon {
   position: absolute;
   top: 2px;
   right: 0;
@@ -204,8 +184,9 @@ a {
   padding: 20px 0;
 }
 .footer .footer_menu {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer__navigation {
@@ -213,7 +194,7 @@ a {
   font-size: 16px;
 }
 .footer__navigation .subtitle {
-  margin-bottom: 25px;
+  padding-bottom: 10px;
   color: #009385;
 }
 .footer__navigation .footer__links li {
@@ -228,7 +209,7 @@ a {
   gap: 13px;
 }
 .social-links a {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 body {
